@@ -12,21 +12,15 @@ export const COLORS = {
 };
 
 // ─── Local image paths (served from /public/images/) ───────────────
+const B = import.meta.env.BASE_URL;
 const IMG = {
-  // orange pack, Himalayan snow peaks backdrop — iconic hero shot
-  himalayaOrange: '/images/pexels-dreamlensproduction-2450296.jpg',
-  // compact grey canvas pack, snowy mountain ridge, cinematic
-  snowPeakGrey:   '/images/pexels-jarodlovekamp-2404444.jpg',
-  // two large expedition packs against tree — green 60L + orange — product flat-lay
-  twoPacksForest: '/images/pexels-kamaji-ogino-5065154.jpg',
-  // man with large orange pack, lush green Indian forest
-  forestOrange:   '/images/pexels-kamaji-ogino-5065321.jpg',
-  // trekker with massive grey frame pack in golden-hour pine forest
-  goldenFramePack:'/images/pexels-mohamedelaminemsiouri-2108809.jpg',
-  // man in yellow jacket with teal expedition pack, misty forest
-  mistyTealPack:  '/images/pexels-thirdman-5048529.jpg',
-  // woman with black roll-top pack, dramatic foggy cliff
-  fogCliffBlack:  '/images/pexels-tomas-malik-793526-2581920.jpg',
+  himalayaOrange:  `${B}images/pexels-dreamlensproduction-2450296.jpg`,
+  snowPeakGrey:    `${B}images/pexels-jarodlovekamp-2404444.jpg`,
+  twoPacksForest:  `${B}images/pexels-kamaji-ogino-5065154.jpg`,
+  forestOrange:    `${B}images/pexels-kamaji-ogino-5065321.jpg`,
+  goldenFramePack: `${B}images/pexels-mohamedelaminemsiouri-2108809.jpg`,
+  mistyTealPack:   `${B}images/pexels-thirdman-5048529.jpg`,
+  fogCliffBlack:   `${B}images/pexels-tomas-malik-793526-2581920.jpg`,
 };
 
 /* ─────────────────────────────────────────────

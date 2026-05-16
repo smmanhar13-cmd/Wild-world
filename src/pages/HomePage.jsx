@@ -6,10 +6,11 @@ import ProductCard from '../components/product/ProductCard';
 import { formatINR } from '../utils/currency';
 
 // Hero images — local assets
+const B = import.meta.env.BASE_URL;
 const HERO_IMAGES = [
-  '/images/pexels-dreamlensproduction-2450296.jpg', // orange pack, Himalayan peaks
-  '/images/pexels-thirdman-5048529.jpg',            // teal pack, misty golden forest
-  '/images/pexels-tomas-malik-793526-2581920.jpg',  // black pack, dramatic foggy cliff
+  `${B}images/pexels-dreamlensproduction-2450296.jpg`, // orange pack, Himalayan peaks
+  `${B}images/pexels-thirdman-5048529.jpg`,            // teal pack, misty golden forest
+  `${B}images/pexels-tomas-malik-793526-2581920.jpg`,  // black pack, dramatic foggy cliff
 ];
 
 // Flagship four capacities
@@ -207,7 +208,7 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto">
           <div className="relative rounded-3xl overflow-hidden h-[480px] md:h-[580px]">
             <img
-              src="/images/pexels-kamaji-ogino-5065321.jpg"
+              src={`${B}images/pexels-kamaji-ogino-5065321.jpg`}
               alt="Himalayan trekking"
               className="w-full h-full object-cover"
             />
